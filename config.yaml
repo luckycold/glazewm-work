@@ -83,7 +83,7 @@ bar:
   opacity: 1.0
   background: *crust_tp
   foreground: *blue
-  font_family: "MesloLGL Nerd Font"
+  font_family: "JetBrainsMono Nerd Font"
   font_size: "13px"
   padding: "4px 6px"
   offset_x: "0"
@@ -135,7 +135,7 @@ bar:
 
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
       # time_formatting: "hh:mm tt  ddd MMM d"
-      time_formatting: "yyyy-dd-MM HH:mm"
+      time_formatting: "ddd M/d/yy h:mm tt"
 
 workspaces:
   - name: "1"
@@ -169,6 +169,7 @@ workspaces:
     # display_name: ""
   - name: "10"
     display_name: ""
+    bind_to_monitor: 1
 window_rules:
   # Task Manager requires admin privileges to manage and should be ignored unless running
 
@@ -365,13 +366,13 @@ keybindings:
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
-    binding: "Alt+A"
+    binding: "Ctrl+Shift+Alt+H"
   - command: "move workspace right"
-    binding: "Alt+F"
+    binding: "Ctrl+Shift+Alt+L"
   - command: "move workspace up"
-    binding: "Alt+D"
+    binding: "Ctrl+Shift+Alt+K"
   - command: "move workspace down"
-    binding: "Alt+S"
+    binding: "Ctrl+Shift+Alt+J"
 
 
   # Move focused window to a workspace defined in `workspaces` config.
