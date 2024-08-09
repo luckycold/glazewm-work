@@ -31,17 +31,17 @@ crust_tp: &crust_tp "#11111bcc"
 
 general:
   # Whether to automatically focus windows underneath the cursor.
-  focus_follows_cursor: false
+  focus_follows_cursor: true
 
   # Whether to jump the cursor between windows focused by the WM.
-  cursor_follows_focus: false
+  cursor_follows_focus: true
 
   # Whether to switch back and forth between the previously focused workspace
   # when focusing the current workspace.
-  toggle_workspace_on_refocus: true
+  toggle_workspace_on_refocus: false
 
   # Whether to show floating windows as always on top.
-  show_floating_on_top: false
+  show_floating_on_top: true
 
   # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
   floating_window_move_amount: "5%"
@@ -52,7 +52,7 @@ general:
   # *Strongly* recommended to set to 'false'. Whether to globally enable/disable
   # window transition animations (on minimize, close, etc). Set to 'unchanged'
   # to make no setting changes.
-  window_animations: "unchanged"
+  window_animations: "false"
 
 gaps:
 
@@ -83,7 +83,7 @@ bar:
   opacity: 1.0
   background: *crust_tp
   foreground: *blue
-  font_family: "JetBrainsMono Nerd Font"
+  font_family: "MesloLGL Nerd Font"
   font_size: "13px"
   padding: "4px 6px"
   offset_x: "0"
@@ -139,19 +139,22 @@ bar:
 
 workspaces:
   - name: "1"
-    # display_name: "󰋞"
-    display_name: "home"
-    keep_alive: true
-  - name: "2"
     # display_name: "" # centered, small
     # display_name: ""
     display_name: "web"
+    bind_to_monitor: 0
+  
+  - name: "2"
+    # display_name: "󰋞"
+    display_name: "home"
+    keep_alive: true
+    bind_to_monitor: 1
 
   - name: "3"
     # display_name: ""
     # display_name: ""
     # display_name: ""
-
+    bind_to_monitor: 1
     display_name: "comms"
 
   - name: "4"
@@ -195,12 +198,12 @@ window_rules:
     match_process_name: "eso64|DaggerfallUnity|valheim|OpenMW|openmw|openmw.exe"
 
 
-  - command: "move to workspace 2"
+  - command: "move to workspace 1"
 
-    match_process_name: "firefox|thorium"
+    match_process_name: "brave|firefox|thorium"
 
   - command: "move to workspace 3"
-    match_process_name: "Discord|mailspring|slack"
+    match_process_name: "Signal|Discord|mailspring|slack"
 
 
 binding_modes:
@@ -221,16 +224,13 @@ binding_modes:
         bindings: ["Escape", "Enter"]
 
 keybindings:
-  - command: "exec 'C:\\Program Files\\Thorium\\Application\\thorium.exe'"
+  - command: "exec 'C:\\Users\\Luke\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe'"
     bindings: ["Alt+B"]
 
   - command: "exec wt"
     bindings: ["Alt+X"]
   - command: "exec explorer"
     bindings: ["Alt+E"]
-  - command: "exec '%LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe'"
-
-    bindings: ["Alt+W"]
   # Shift focus in a given direction.
   - command: "focus left"
     bindings: ["Alt+H", "Alt+Left"]
@@ -293,7 +293,7 @@ keybindings:
   # Close focused window.
 
   - command: "close"
-    binding: "Alt+Q"
+    binding: "Alt+Shift+Q"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
@@ -307,7 +307,7 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
-  - command: "exec cmd"
+  - command: "exec wt"
     binding: "Alt+Enter"
 
   # Focus the workspace that last had focus.
@@ -340,6 +340,27 @@ keybindings:
     binding: "Alt+8"
   - command: "focus workspace 9"
     binding: "Alt+9"
+
+    #Change focus to a workspace defined in `workspaces` config.
+  - command: "focus workspace 1"
+    binding: "Alt+NumPad1"
+  - command: "focus workspace 2"
+    binding: "Alt+NumPad2"
+  - command: "focus workspace 3"
+    binding: "Alt+NumPad3"
+  - command: "focus workspace 4"
+    binding: "Alt+NumPad4"
+  - command: "focus workspace 5"
+    binding: "Alt+NumPad5"
+  - command: "focus workspace 6"
+    binding: "Alt+NumPad6"
+  - command: "focus workspace 7"
+    binding: "Alt+NumPad7"
+  - command: "focus workspace 8"
+    binding: "Alt+NumPad8"
+  - command: "focus workspace 9"
+    binding: "Alt+NumPad9"
+
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
