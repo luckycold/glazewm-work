@@ -106,8 +106,8 @@ bar:
       default_workspace_background: "transparent"
     - type: "music"
 
-      label_not_playing: " --  --"
-      label_paused: " {song_title} - {artist_name}"
+      label_not_playing: "󰝛 --  --"
+      label_paused: "󰏤 {song_title} - {artist_name}"
       label_playing: "  {song_title} - {artist_name}"
 
       max_title_length: 30
@@ -129,7 +129,7 @@ bar:
     #  label_wifi_strength25: "WiFi: 25%"
     #  label_wifi_strength50: "WiFi: 50%"
     #  label_wifi_strength75: "WiFi: 75%"
-    #  label_wifi_strength100: "WiFi: 100%"    
+    #  label_wifi_strength100: "WiFi: 100%"
     - type: "clock"
       # Documentation on formatting date/time string:
 
@@ -140,12 +140,14 @@ bar:
 workspaces:
   - name: "1"
     # display_name: "" # centered, small
+    display_name: "󰜏" # centered, small
     # display_name: ""
-    display_name: "web"
+    # display_name: "web"
     bind_to_monitor: 0
   - name: "2"
     # display_name: "󰋞"
-    display_name: "email"
+    #display_name: "email"
+    display_name: ""
     keep_alive: true
     bind_to_monitor: 1
   - name: "3"
@@ -153,12 +155,16 @@ workspaces:
     # display_name: ""
     # display_name: ""
     bind_to_monitor: 1
-    display_name: "comms"
+    # display_name: "comms"
+    display_name: ""
   - name: "4"
-    # display_name: "󰂺"
+    display_name: "󰊻"
+    bind_to_monitor: 1
     # display_name: ""
   - name: "5"
     # display_name: ""
+    display_name: "󰏫"
+    bind_to_monitor: 1
   - name: "6"
     # display_name: ""
   - name: "7"
@@ -189,6 +195,7 @@ window_rules:
 
   # Some applications (eg. Steam) have borders that extend past the normal border size.
   - command: "resize borders 0px -7px -7px -7px"
+
     match_process_name: "steam"
 
   - command: "ignore"
@@ -200,8 +207,25 @@ window_rules:
 
     match_process_name: "brave|firefox|thorium"
 
+  - command: "move to workspace 2"
+
+    match_process_name: "thunderbird"
+
   - command: "move to workspace 3"
+
     match_process_name: "Signal|Discord|mailspring|slack"
+
+  - command: "move to workspace 4"
+
+    match_process_name: "ms-teams"
+
+  - command: "move to workspace 5"
+
+    match_process_name: "Obsidian"
+
+  - command: "move to workspace 10"
+
+    match_process_name: "WindowsTerminal"
 
 
 binding_modes:
@@ -398,3 +422,26 @@ keybindings:
   - commands: ["move to workspace 10", "focus workspace 10"]
     bindings: ["Alt+Shift+0"]
 
+
+  # Move focused window to a workspace defined in `workspaces` config.
+
+  - commands: ["move to workspace 1", "focus workspace 1"]
+    binding: "Alt+Shift+NumPad1"
+  - commands: ["move to workspace 2", "focus workspace 2"]
+    binding: "Alt+Shift+NumPad2"
+  - commands: ["move to workspace 3", "focus workspace 3"]
+    binding: "Alt+Shift+NumPad3"
+  - commands: ["move to workspace 4", "focus workspace 4"]
+    binding: "Alt+Shift+NumPad4"
+  - commands: ["move to workspace 5", "focus workspace 5"]
+    binding: "Alt+Shift+NumPad5"
+  - commands: ["move to workspace 6", "focus workspace 6"]
+    binding: "Alt+Shift+NumPad6"
+  - commands: ["move to workspace 7", "focus workspace 7"]
+    binding: "Alt+Shift+NumPad7"
+  - commands: ["move to workspace 8", "focus workspace 8"]
+    binding: "Alt+Shift+NumPad8"
+  - commands: ["move to workspace 9", "focus workspace 9"]
+    bindings: ["Alt+Shift+NumPad9"]
+  - commands: ["move to workspace 10", "focus workspace 10"]
+    bindings: ["Alt+Shift+NumPad0"]
