@@ -69,3 +69,51 @@ GlazeWM.Infrastructure.Exceptions.FatalUserException: Failed to parse user confi
 Command history: HandleFatalExceptionCommand, EvaluateUserConfigCommand, ReloadUserConfigCommand, RunWithSubjectContainerCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, FocusContainerUnderCursorCommand, SyncNativeFocusCommand, RedrawContainersCommand, DetachContainerCommand, IgnoreWindowCommand, RunWithSubjectContainerCommand 
 State dump: {"id":"b6a34717-890d-4787-9715-3bf7ea142878","x":0,"y":0,"width":0,"height":0,"type":"root","focus_index":0,"children":[{"device_name":"\\\\.\\DISPLAY1","id":"e199aad3-248d-4706-99de-75def3457778","x":1920,"y":-2,"width":1920,"height":1080,"type":"monitor","focus_index":0,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"2","id":"0fc74e7a-d948-452d-a8af-574eb1a7d5cc","x":1921,"y":27,"width":1918,"height":1050,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":1914,"top":24,"right":3846,"bottom":1081,"x":1914,"y":24,"width":1932,"height":1057},"border_delta":{"left":7,"top":0,"right":7,"bottom":7},"handle":788490,"size_percentage":0.5,"id":"92a757f0-e0bb-4130-9e6e-d6e6bf434138","x":1921,"y":27,"width":958,"height":1050,"type":"window","focus_index":1,"children":[]},{"floating_placement":{"left":1914,"top":24,"right":3846,"bottom":1081,"x":1914,"y":24,"width":1932,"height":1057},"border_delta":{"left":7,"top":0,"right":7,"bottom":7},"handle":853990,"size_percentage":0.5,"id":"3cd74dac-d007-4a27-b928-f43b4f6484ee","x":2881,"y":27,"width":958,"height":1050,"type":"window","focus_index":0,"children":[]},{"floating_placement":{"left":2401,"top":27,"right":3359,"bottom":1077,"x":2401,"y":27,"width":958,"height":1050},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":591168,"previous_state":"tiling","id":"cfce8e2b-ea26-4091-9a2c-b0644e95b475","x":0,"y":0,"width":0,"height":0,"type":"window","focus_index":2,"children":[]}]},{"tiling_direction":"horizontal","size_percentage":0,"name":"4","id":"e690b602-cabc-4c8a-ae36-6ef1e6de8dcb","x":1921,"y":27,"width":1918,"height":1050,"type":"workspace","focus_index":3,"children":[{"floating_placement":{"left":1914,"top":24,"right":3846,"bottom":1081,"x":1914,"y":24,"width":1932,"height":1057},"border_delta":{"left":7,"top":0,"right":7,"bottom":7},"handle":657144,"size_percentage":1,"id":"9e037d24-b1f3-4db3-a2b0-db3d3e55fca9","x":1921,"y":27,"width":1918,"height":1050,"type":"window","focus_index":0,"children":[]}]},{"tiling_direction":"horizontal","size_percentage":0,"name":"3","id":"abb30d35-c5e1-432d-8e64-5a54508f81cb","x":1921,"y":27,"width":1918,"height":1050,"type":"workspace","focus_index":2,"children":[{"floating_placement":{"left":2401,"top":27,"right":3359,"bottom":1077,"x":2401,"y":27,"width":958,"height":1050},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":66976,"size_percentage":0.5,"id":"2ca2d114-a143-494f-a05d-faa0d090f131","x":1921,"y":27,"width":958,"height":1050,"type":"window","focus_index":1,"children":[]},{"floating_placement":{"left":2401,"top":27,"right":3359,"bottom":1077,"x":2401,"y":27,"width":958,"height":1050},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":327778,"size_percentage":0.5,"id":"1c067929-480e-44c8-bc67-717a12b3f279","x":2881,"y":27,"width":958,"height":1050,"type":"window","focus_index":0,"children":[]}]},{"tiling_direction":"horizontal","size_percentage":0,"name":"5","id":"067f8774-9ed7-4372-b10b-e639c39e5e03","x":1921,"y":27,"width":1918,"height":1050,"type":"workspace","focus_index":1,"children":[{"floating_placement":{"left":1921,"top":27,"right":3839,"bottom":1077,"x":1921,"y":27,"width":1918,"height":1050},"border_delta":{"left":0,"top":0,"right":0,"bottom":0},"handle":527490,"size_percentage":1,"id":"a63fe79b-136a-436c-a8c1-a081b8256d78","x":1921,"y":27,"width":1918,"height":1050,"type":"window","focus_index":0,"children":[]}]}]},{"device_name":"\\\\.\\DISPLAY2","id":"31a9db94-d575-465e-b20e-2faba2f67c6d","x":0,"y":0,"width":1920,"height":1080,"type":"monitor","focus_index":1,"children":[{"tiling_direction":"horizontal","size_percentage":1,"name":"1","id":"99456118-273d-4823-b218-0d0e6dbcdf8d","x":1,"y":29,"width":1918,"height":1050,"type":"workspace","focus_index":0,"children":[{"floating_placement":{"left":-6,"top":26,"right":1926,"bottom":1083,"x":-6,"y":26,"width":1932,"height":1057},"border_delta":{"left":7,"top":0,"right":7,"bottom":7},"handle":263936,"size_percentage":1,"id":"3c21d1ae-0574-4735-ab58-5b456f1cb9a4","x":1,"y":29,"width":1918,"height":1050,"type":"window","focus_index":0,"children":[]}]}]}]}
 
+[2m2024-08-19T12:52:49.847054Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general: missing field `cursor_jump` at line 34 column 3
+[2m2024-08-19T12:53:29.436084Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general: missing field `cursor_jump` at line 34 column 3
+[2m2024-08-19T12:53:43.234367Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general: missing field `cursor_jump` at line 34 column 3
+[2m2024-08-19T12:53:58.475673Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.cursor_jump: invalid type: boolean `true`, expected struct CursorJumpConfig at line 37 column 16
+[2m2024-08-19T12:56:08.819325Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m gaps.outer_gap: invalid type: string "1", expected struct RectDelta at line 64 column 14
+[2m2024-08-19T12:57:05.780437Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 188 column 5
+[2m2024-08-19T12:58:44.378211Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 188 column 5
+[2m2024-08-19T12:59:17.633719Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: invalid type: string "ignore", expected a sequence at line 188 column 15
+[2m2024-08-19T12:59:34.332138Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: invalid type: string "ignore", expected a sequence at line 188 column 15
+[2m2024-08-19T13:01:10.527810Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `match` at line 188 column 5
+[2m2024-08-19T13:17:38.367636Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `match` at line 188 column 5
+[2m2024-08-19T13:21:47.627961Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1].commands: unrecognized subcommand
+ at line 193 column 15
+[2m2024-08-19T13:22:57.958346Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1].commands: unrecognized subcommand
+ at line 193 column 15
+[2m2024-08-19T13:23:03.071025Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1]: missing field `match` at line 193 column 5
+[2m2024-08-19T13:40:05.484204Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1]: missing field `match` at line 193 column 5
+[2m2024-08-19T13:41:01.916271Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[3].commands: unexpected argument found
+ at line 205 column 15
+[2m2024-08-19T13:41:21.483656Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[3].commands: unrecognized subcommand
+ at line 205 column 15
+[2m2024-08-19T13:46:57.755732Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[3].commands: unexpected argument found
+ at line 205 column 15
+[2m2024-08-19T13:47:26.123452Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[5].commands: unexpected argument found
+ at line 214 column 15
+[2m2024-08-19T13:50:54.566512Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[0].keybindings[0]: missing field `commands` at line 244 column 9
+[2m2024-08-19T13:51:42.282023Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[0].keybindings[0].commands: invalid type: string "resize --width -2%", expected a sequence at line 244 column 19
+[2m2024-08-19T13:53:04.742175Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0]: missing field `commands` at line 257 column 5
+[2m2024-08-19T13:53:21.346821Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0].commands: unrecognized subcommand
+ at line 257 column 15
+[2m2024-08-19T13:54:10.185280Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[0].commands: unrecognized subcommand
+ at line 257 column 15
+[2m2024-08-19T13:56:03.457311Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[1]: missing field `commands` at line 260 column 5
+[2m2024-08-19T13:57:05.666136Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[3].commands: unexpected argument found
+ at line 265 column 15
+[2m2024-08-19T13:58:11.566852Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[3].commands: unexpected argument found
+ at line 265 column 15
+[2m2024-08-19T13:58:40.940896Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[11]: missing field `bindings` at line 286 column 5
+[2m2024-08-19T14:03:24.381467Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[11]: missing field `bindings` at line 286 column 5
+[2m2024-08-19T14:08:47.139171Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[16].commands: unrecognized subcommand
+ at line 301 column 15
+[2m2024-08-19T14:14:37.446481Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[48].commands: unexpected argument found
+ at line 399 column 15
+[2m2024-08-19T14:15:25.645719Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[60]: missing field `bindings` at line 427 column 5
+[2m2024-08-19T14:15:42.031112Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[61]: missing field `bindings` at line 429 column 5
+[2m2024-08-19T14:15:49.926582Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[70]: missing field `bindings` at line 451 column 5
+[2m2024-08-19T14:16:00.743126Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m missing field `window_behavior`
+[2m2024-08-19T14:18:03.827449Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m missing field `window_effects`
