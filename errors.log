@@ -117,3 +117,9 @@ State dump: {"id":"b6a34717-890d-4787-9715-3bf7ea142878","x":0,"y":0,"width":0,"
 [2m2024-08-19T14:15:49.926582Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[70]: missing field `bindings` at line 451 column 5
 [2m2024-08-19T14:16:00.743126Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m missing field `window_behavior`
 [2m2024-08-19T14:18:03.827449Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m missing field `window_effects`
+[2m2024-08-20T13:07:57.032527Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m could not find expected ':' at line 142 column 5, while scanning a simple key at line 141 column 5
+[2m2024-08-20T13:08:27.422218Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m could not find expected ':' at line 142 column 3, while scanning a simple key at line 141 column 5
+[2m2024-08-22T15:09:14.944396Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-08-26T15:08:52.105099Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m could not find expected ':' at line 142 column 5, while scanning a simple key at line 141 column 5
+[2m2024-08-26T15:11:15.506798Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[9]: missing field `commands` at line 158 column 5
+[2m2024-08-26T15:31:59.872874Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected '-' indicator at line 109 column 3, while parsing a block collection at line 73 column 3

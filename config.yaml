@@ -90,21 +90,22 @@ workspaces:
     # display_name: "comms"
     display_name: ""
   - name: "4"
-    display_name: "󰊻"
-    bind_to_monitor: 1
     # display_name: ""
   - name: "5"
     # display_name: ""
     display_name: "󰏫"
     bind_to_monitor: 1
   - name: "6"
-    # display_name: ""
+    display_name: "󰊻"
+    bind_to_monitor: 1
   - name: "7"
     # display_name: ""
   - name: "8"
-    # display_name: ""
+    display_name: "󰢹"
+    bind_to_monitor: 1
   - name: "9"
-    # display_name: ""
+    display_name: ""
+    bind_to_monitor: 1
   - name: "10"
     display_name: ""
     bind_to_monitor: 1
@@ -138,20 +139,24 @@ window_rules:
     - window_process:  { regex: "brave|firefox|thorium" }
 
   - commands: ["move --workspace  2"]
-    match
+    match:
     - window_process:  { equals: "thunderbird" }
 
   - commands: ["move --workspace  3"]
     match:
     - window_process:  { regex: "Signal|Discord|mailspring|slack" }
 
-  - commands: ["move --workspace  4"]
+  - commands: ["move --workspace  6"]
     match:
     - window_process:  { equals: "ms-teams" }
 
   - commands: ["move --workspace  5"]
     match:
     - window_process:  { equals: "Obsidian" }
+
+  - commands: ["move --workspace 9"]
+    match:
+    - window_process: { equals: "UNIVERGE BLUE CONNECT" }
 
   - commands: ["move --workspace  10"]
     match:
