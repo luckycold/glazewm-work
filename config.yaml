@@ -357,6 +357,8 @@ keybindings:
     bindings: ['alt+ctrl+8']
   - commands: ['move --workspace 9', 'focus --workspace 9']
     bindings: ['alt+ctrl+9']
+  - commands: ["move --workspace 10", "focus --workspace 10"]
+    bindings: ["alt+ctrl+0"]
 
   # Move focused window to a workspace defined in `workspaces` config.
 
