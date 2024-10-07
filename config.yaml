@@ -1,8 +1,12 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
-
+  startup_commands: ['shell-exec zebar']
+  shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
+  reload_commands: [
+    'shell-exec taskkill /IM zebar.exe /F',
+    'shell-exec zebar'
+  ]
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: true
 
@@ -158,11 +162,6 @@ window_rules:
     match:
     - window_process: { equals: "UNIVERGE BLUE CONNECT" }
 
-  - commands: ["move --workspace  10"]
-    match:
-    - window_process:  { equals: "WindowsTerminal" }
-
-
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
   - name: 'resize'
@@ -303,6 +302,8 @@ keybindings:
     bindings: ['alt+8']
   - commands: ['focus --workspace 9']
     bindings: ['alt+9']
+  - commands: ['focus --workspace 10']
+    bindings: ['alt+0']
 
     #Change focus to a workspace defined in `workspaces` config.
   - commands: ["focus --workspace  1"]
