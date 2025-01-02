@@ -1,7 +1,7 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  startup_commands: ['shell-exec zebar']
+  startup_commands: ['shell-exec zebar', 'shell-exec %localappdata%/BraveSoftware/Brave-Browser/Application/brave.exe', 'focus --workspace 4']
   shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
   reload_commands: [
     'shell-exec taskkill /IM zebar.exe /F',
@@ -12,7 +12,7 @@ general:
 
   # Whether to switch back and forth between the previously focused
   # workspace when focusing the current workspace.
-  toggle_workspace_on_refocus: false
+  toggle_workspace_on_refocus: true
 
   cursor_jump:
     # Whether to automatically move the cursor on the specified trigger.
@@ -95,6 +95,7 @@ workspaces:
     display_name: ""
   - name: "4"
     # display_name: ""
+    bind_to_monitor: 1
   - name: "5"
     # display_name: ""
     display_name: "󰏫"
@@ -149,6 +150,10 @@ window_rules:
   - commands: ["move --workspace  3"]
     match:
     - window_process:  { regex: "Signal|Discord|mailspring|slack" }
+
+  - commands: ["move --workspace  4"]
+    match:
+    - window_process:  { equals: "Spotify" }
 
   - commands: ["move --workspace  6"]
     match:
@@ -330,13 +335,13 @@ keybindings:
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
   - commands: ['move-workspace --direction left']
-    bindings: ['alt+lctrl+h']
+    bindings: ['alt+rctrl+h']
   - commands: ['move-workspace --direction right']
-    bindings: ['alt+lctrl+l']
+    bindings: ['alt+rctrl+l']
   - commands: ['move-workspace --direction up']
-    bindings: ['alt+lctrl+k']
+    bindings: ['alt+rctrl+k']
   - commands: ['move-workspace --direction down']
-    bindings: ['alt+lctrl+j']
+    bindings: ['alt+rctrl+j']
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']
